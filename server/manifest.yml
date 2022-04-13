@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: djangoapp-cmar
     routes:
-      - route: $HOST.$DOMAIN
+      - route: cmar.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: djangoapp-nginx-cmar
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: cmar.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
